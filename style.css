@@ -1,0 +1,210 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f1;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+/* =========================
+   MAIN CV CONTAINER
+========================= */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #198754;
+}
+
+.header-info h1 {
+    font-size: 36px;
+    color: #198754;
+    margin-bottom: 5px;
+}
+
+.header-info h2 {
+    font-size: 20px;
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.contact {
+    font-size: 14px;
+    color: #555;
+}
+
+.contact p {
+    margin: 3px 0;
+}
+
+.profile-photo {
+    width: 170px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #198754;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    color: #198754;
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d7e7dc;
+}
+
+.section p {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #e4f3e9;
+    color: #176b3b;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* =========================
+   EDUCATION / EXPERIENCE
+========================= */
+
+.item {
+    margin-bottom: 22px;
+}
+
+.item h3 {
+    font-size: 17px;
+    color: #2467a5;
+    margin-bottom: 4px;
+}
+
+.date {
+    color: #777;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 22px;
+    margin: 8px 0 12px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.item strong {
+    color: #444;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 13px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 22px;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header-info h1 {
+        font-size: 28px;
+    }
+
+    .profile-photo {
+        width: 145px;
+        height: 175px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+}
+
+/* =========================
+   PRINT CV
+========================= */
+
+@media print {
+
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 20px;
+    }
+}
